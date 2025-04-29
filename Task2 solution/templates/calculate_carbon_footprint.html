@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>carbon footprint calculator</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style_sheet.css">
+</head>
+<body>
+    <div class="navbar">
+        <!--navigation bar-->
+        <ul>
+            <li style="float:left">
+                <form action="/home" method="GET">
+                    <input type="image" name="home" src="/static/css/home_icon.png" class="home_icon" />
+                </form>
+            </li>
+            <li style="margin:100px">ROLSA TECHNOLOGIES</li>
+            <li style="float:right"><img src="/static/css/not signed in.png" style="width:80px; margin:5px" :></li>
+            <li style="float:right">
+                <form action="/sign_in" method="GET">
+                    <input name="sign_in" id="sign_in" value="sign in" type="submit" class="nav_submit" />
+                </form>
+            </li>
+            <li style="float:right">
+                <form action="/manage_bookings" method="GET">
+                    <input name="manage_bookings" id="manage_bookings" value="manage bookings" type="submit" class="nav_submit" style="margin-right:5px; width:auto;" />
+                </form>
+            </li>
+            <li style="float:right;font-size:15px; margin-right:10px"><p>{{logged_in}}</p></li> <!--only shows this if logged in and shows the email that it is logged in with-->
+        </ul>
+    </div>
+    <div style="text-align:center">
+        <!--a div to center the api for calculating carbon footprint-->
+        <iframe width="710" height="1300" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="https://calculator.carbonfootprint.com/calculator.aspx"></iframe> <!--the api to calculate carbon footprint-->
+    </div>
+</body>
+</html>

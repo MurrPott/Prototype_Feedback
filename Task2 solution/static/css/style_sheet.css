@@ -1,0 +1,115 @@
+﻿.info_box {
+    margin: auto; /* margin auto makes the box centre automatically */
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 50%;
+    text-align: center;
+    outline: 5px solid black;
+    background-color: rgb(60,60,60);
+    color: floralwhite;
+    border-radius: 25px; /*i used AI to figure out how to smooth out the corners of the box*/
+    font-size: 20px;
+    padding: 10px;
+}
+
+.vertical_info_box { /*coppied and changed from the info_box class*/
+    margin: auto; /* margin auto makes the box centre automatically */
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 15%;
+    text-align: center;
+    outline: 5px solid black;
+    background-color: darkslategray;
+    color: floralwhite;
+    border-radius: 25px; 
+    font-size: 20px;
+    padding: 10px;
+    height: 740px;
+}
+
+.navbar { /*class for the nav bar*/
+    text-align: center;
+    outline: 5px solid black;
+    background-color: rgb(165, 134, 134);
+    color: floralwhite;
+    font-size: 30px;
+    height: 60px;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.submit { /*all buttons apart from special cases*/
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: rgb(165, 134, 134);
+    color:white;
+    border: 2px solid black;
+}
+
+.dropdown {
+
+}
+
+.nav_submit { /*a smaller submit button for buttons on the task bar*/
+    height: 30px;
+    width: 100px;
+    border-radius: 955px;
+    background-color: rgb(125, 110, 110);
+    color: white;
+    border: 2px solid black;
+}
+
+.submit:hover{  /*these 2 classes make it so that when you hover over a button it will go lighter which makes it obvious you can click it*/
+    opacity: 0.5;
+}
+
+.nav_submit:hover { /*makes the nav_submit button go see through when you hover over to indicate you can click it*/
+    opacity: 0.5;
+}
+
+.text_input { /*the standard size of the text inputs*/
+    height:40px;
+    width:350px;
+}
+
+.home_icon { /*makes sure that the home icon is only 80px wide so that it isnt too big*/
+    width:80px;
+}
+
+.home_icon:hover {/*when hover goes transparent so you know to click*/
+    opacity:0.5;
+}
+
+.manage_bookings {
+    margin: auto;
+    background-color: rgb(165, 134, 134);
+}
+
+ul {
+    margin: 10px;
+}
+
+li {
+    border: 10px;
+    display: inline;
+}
+
+body{
+    background-color: rgb(20,20,20);
+}
+.background { /*i used AI to format the background image correctly so that it doesnt repeat and it is sized properly */
+    background-image: url('roof_men.jpg');
+    background-size: cover; /* Adjusts the image to fully cover the background */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position: center;
+    background-color: black;
+    background-position-y: center;
+    height: 150%;
+}
+
+p{ /*makes all text in a paragragh white and a good font*/
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
